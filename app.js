@@ -237,7 +237,17 @@ function escapeHtml(str) {
     .replaceAll("'", "&#039;");
 }
 async function init() {
-  const res = await fetch("/content.json", { cache: "no-store" });
+  function getSiteRoot() {
+  let p = window.location.pathname;
+  // If on /admin (just in case), go up to site root
+  if (p.includes("/admin")) p = p.split("/admin")[0] + "/";
+  // If on /something/page.html, keep folder
+  p = p.endsWith("/") ? p : p.replace(/[^/]*$/, "");
+  return window.location.origin + p;
+}
+
+const res = await fetch(getSiteRoot() + "content.json", { cache: "no-store" });
+
   if (!res.ok) throw new Error("Failed to load content.json");
   const base = await res.json();
 

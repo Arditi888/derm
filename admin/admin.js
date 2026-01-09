@@ -1,4 +1,18 @@
-const BASE_URL = "/content.json";
+function getSiteRoot() {
+  // Works on GitHub Pages repo path + /admin/
+  let p = window.location.pathname;
+
+  // If you're in /admin or /admin/...
+  if (p.includes("/admin")) {
+    p = p.split("/admin")[0] + "/"; // keep "/repo/" if present
+  } else {
+    // otherwise keep current folder
+    p = p.endsWith("/") ? p : p.replace(/[^/]*$/, "");
+  }
+  return window.location.origin + p;
+}
+
+const BASE_URL = getSiteRoot() + "content.json";
 const LS_OVERRIDE_KEY = "derm_site_override_v1";
 const LS_ADMIN_SESSION = "derm_admin_session_v1";
 
