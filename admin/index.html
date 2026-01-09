@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin • DERM Clinic</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <div class="t">Admin Panel</div>
+          <div class="s">Edit site content (SQ/EN) • Export JSON</div>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn ghost" href="/">View site</a>
+        <button id="logoutBtn" class="btn ghost" type="button">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- LOGIN -->
+    <section id="loginView" class="card">
+      <h1>Login</h1>
+      <p class="muted">Enter the admin password to edit the site.</p>
+
+      <form id="loginForm" class="grid">
+        <label class="field">
+          <span>Password</span>
+          <input id="passwordInput" type="password" autocomplete="current-password" required />
+        </label>
+
+        <button class="btn primary" type="submit">Login</button>
+        <div id="loginError" class="error" role="alert"></div>
+      </form>
+
+      <details class="help">
+        <summary>Need to change password?</summary>
+        <p class="muted">
+          This static admin uses a SHA-256 hash stored in <code>content.json</code>.
+          Use the “Generate password hash” tool below.
+        </p>
+        <div class="grid2">
+          <label class="field">
+            <span>New password</span>
+            <input id="newPass" type="text" />
+          </label>
+          <button id="genHashBtn" class="btn ghost" type="button">Generate hash</button>
+        </div>
+        <pre id="hashOut" class="pre"></pre>
+      </details>
+    </section>
+
+    <!-- EDITOR -->
+    <section id="editorView" class="hidden">
+      <div class="toolbar card">
+        <div class="toolbar-left">
+          <div class="pill">
+            <span class="muted">Editing language:</span>
+            <button id="langSq" class="btn tiny primary" type="button">SQ</button>
+            <button id="langEn" class="btn tiny ghost" type="button">EN</button>
+          </div>
+          <div class="pill">
+            <span class="muted">Status:</span>
+            <span id="statusText" class="ok">Loaded</span>
+          </div>
+        </div>
+        <div class="toolbar-right">
+          <button id="saveBtn" class="btn primary" type="button">Save (this device)</button>
+          <button id="clearBtn" class="btn ghost" type="button">Clear overrides</button>
+          <button id="exportBtn" class="btn ghost" type="button">Export content.json</button>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <section class="card">
+          <h2>Clinic</h2>
+          <div class="grid">
+            <label class="field">
+              <span>Clinic name</span>
+              <input data-path="i18n.{lang}.clinicName" type="text" />
+            </label>
+            <label class="field">
+              <span>Tagline</span>
+              <input data-path="i18n.{lang}.clinicTagline" type="text" />
+            </label>
+            <label class="field">
+              <span>Hero title</span>
+              <textarea data-path="i18n.{lang}.hero.title" rows="2"></textarea>
+            </label>
+            <label class="field">
+              <span>Hero subtitle</span>
+              <textarea data-path="i18n.{lang}.hero.subtitle" rows="3"></textarea>
+            </label>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Contact (shared)</h2>
+          <div class="grid">
+            <label class="field">
+              <span>Phone</span>
+              <input data-path="contact.phone" type="text" />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input data-path="contact.email" type="email" />
+            </label>
+            <label class="field">
+              <span>Address</span>
+              <input data-path="contact.address" type="text" />
+            </label>
+            <label class="field">
+              <span>Hours</span>
+              <input data-path="contact.hours" type="text" />
+            </label>
+            <label class="field">
+              <span>WhatsApp number (digits only)</span>
+              <input data-path="contact.whatsappNumber" type="text" />
+            </label>
+            <label class="field">
+              <span>Maps URL</span>
+              <input data-path="contact.mapsUrl" type="text" />
+            </label>
+            <label class="field">
+              <span>Map embed URL</span>
+              <input data-path="contact.mapEmbedUrl" type="text" />
+            </label>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Images (data URIs)</h2>
+          <p class="muted">Paste a data URI (base64) or keep the SVG placeholders.</p>
+          <div class="grid">
+            <label class="field">
+              <span>Logo</span>
+              <textarea data-path="assets.logo" rows="3"></textarea>
+            </label>
+            <label class="field">
+              <span>Hero Image</span>
+              <textarea data-path="assets.heroImage" rows="3"></textarea>
+            </label>
+          </div>
+        </section>
+      </div>
+
+      <section class="card">
+        <h2>Services (current language)</h2>
+        <div id="servicesEditor"></div>
+        <button id="addServiceBtn" class="btn ghost" type="button">+ Add service</button>
+      </section>
+
+      <section class="card">
+        <h2>Doctors (current language)</h2>
+        <div id="doctorsEditor"></div>
+        <button id="addDoctorBtn" class="btn ghost" type="button">+ Add doctor</button>
+      </section>
+
+      <section class="card">
+        <h2>Testimonials (current language)</h2>
+        <div id="testimonialsEditor"></div>
+        <button id="addTestBtn" class="btn ghost" type="button">+ Add testimonial</button>
+      </section>
+
+      <section class="card">
+        <h2>Results / Gallery (current language)</h2>
+        <div id="resultsEditor"></div>
+        <button id="addResultBtn" class="btn ghost" type="button">+ Add result</button>
+      </section>
+
+      <section class="card">
+        <h2>Raw JSON (overrides only)</h2>
+        <p class="muted">This is what gets saved to localStorage. Export merges base + overrides.</p>
+        <pre id="rawOut" class="pre"></pre>
+      </section>
+    </section>
+  </main>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>

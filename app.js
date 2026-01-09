@@ -1,7 +1,29 @@
 let SITE = null;
 let lang = "sq";
-
+const LS_OVERRIDE_KEY = "derm_site_override_v1";
 const $ = (sel) => document.querySelector(sel);
+
+function deepMerge(base, override) {
+  if (!override) return base;
+  if (Array.isArray(base) && Array.isArray(override)) return override; // override arrays fully
+  if (typeof base === "object" && base && typeof override === "object" && override) {
+    const out = { ...base };
+    for (const k of Object.keys(override)) {
+      out[k] = deepMerge(base[k], override[k]);
+    }
+    return out;
+  }
+  return override;
+}
+
+function loadOverrides() {
+  try {
+    const raw = localStorage.getItem(LS_OVERRIDE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
 
 function getByPath(obj, path) {
   return path.split(".").reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : null), obj);
@@ -214,11 +236,13 @@ function escapeHtml(str) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
-
 async function init() {
-  const res = await fetch("content.json", { cache: "no-store" });
+  const res = await fetch("/content.json", { cache: "no-store" });
   if (!res.ok) throw new Error("Failed to load content.json");
-  SITE = await res.json();
+  const base = await res.json();
+
+  const overrides = loadOverrides();
+  SITE = deepMerge(base, overrides);
 
   lang = SITE?.meta?.defaultLang || "sq";
 
@@ -233,7 +257,7 @@ async function init() {
     applyI18n();
   });
 
-  // Appointment form: open mailto with details (simple + works without backend)
+  // Appointment form mailto (same as before)
   $("#appointmentForm")?.addEventListener("submit", (e) => {
     e.preventDefault();
     const dict = SITE.i18n[lang];
@@ -266,5 +290,5 @@ async function init() {
 
 init().catch((err) => {
   console.error(err);
-  alert("Could not load site content. Make sure you're running with a local server and content.json exists.");
+  alert("Could not load site content. Make sure content.json exists and you're serving via HTTP.");
 });

@@ -1,6 +1,10 @@
 {
   "meta": {
-    "defaultLang": "sq"
+    "defaultLang": "sq",
+    "admin": {
+      "passwordSha256": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "sessionMinutes": 60
+    }
   },
   "assets": {
     "logo": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop stop-color='%235dd6c1' offset='0'/><stop stop-color='%237aa7ff' offset='1'/></linearGradient></defs><rect width='160' height='160' rx='34' fill='%230f1722'/><path d='M38 88c18-32 34-46 52-46s34 14 52 46c-18 32-34 46-52 46S56 120 38 88z' fill='url(%23g)' opacity='0.95'/><circle cx='90' cy='78' r='10' fill='%230b0f14' opacity='0.55'/><text x='80' y='150' text-anchor='middle' font-family='Arial' font-size='16' fill='%23a9b4c6'>DERM</text></svg>",
