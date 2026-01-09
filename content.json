@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "defaultLang": "sq"
+  },
+  "assets": {
+    "logo": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop stop-color='%235dd6c1' offset='0'/><stop stop-color='%237aa7ff' offset='1'/></linearGradient></defs><rect width='160' height='160' rx='34' fill='%230f1722'/><path d='M38 88c18-32 34-46 52-46s34 14 52 46c-18 32-34 46-52 46S56 120 38 88z' fill='url(%23g)' opacity='0.95'/><circle cx='90' cy='78' r='10' fill='%230b0f14' opacity='0.55'/><text x='80' y='150' text-anchor='middle' font-family='Arial' font-size='16' fill='%23a9b4c6'>DERM</text></svg>",
+    "heroImage": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700' viewBox='0 0 1200 700'><defs><linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'><stop stop-color='%23121b28' offset='0'/><stop stop-color='%230b0f14' offset='1'/></linearGradient><radialGradient id='r1' cx='30%25' cy='20%25' r='60%25'><stop stop-color='%235dd6c1' stop-opacity='0.35' offset='0'/><stop stop-color='%235dd6c1' stop-opacity='0' offset='1'/></radialGradient><radialGradient id='r2' cx='80%25' cy='15%25' r='55%25'><stop stop-color='%237aa7ff' stop-opacity='0.30' offset='0'/><stop stop-color='%237aa7ff' stop-opacity='0' offset='1'/></radialGradient></defs><rect width='1200' height='700' fill='url(%23bg)'/><rect width='1200' height='700' fill='url(%23r1)'/><rect width='1200' height='700' fill='url(%23r2)'/><g opacity='0.9'><circle cx='260' cy='360' r='170' fill='%23ffffff' fill-opacity='0.05'/><circle cx='890' cy='420' r='230' fill='%23ffffff' fill-opacity='0.04'/></g><g><rect x='120' y='150' width='430' height='64' rx='18' fill='%23ffffff' fill-opacity='0.05'/><rect x='120' y='240' width='520' height='18' rx='9' fill='%23ffffff' fill-opacity='0.07'/><rect x='120' y='270' width='460' height='18' rx='9' fill='%23ffffff' fill-opacity='0.06'/><rect x='120' y='300' width='500' height='18' rx='9' fill='%23ffffff' fill-opacity='0.05'/></g><g><rect x='740' y='160' width='340' height='420' rx='34' fill='%23ffffff' fill-opacity='0.04' stroke='%23ffffff' stroke-opacity='0.10'/><circle cx='910' cy='300' r='96' fill='%235dd6c1' fill-opacity='0.14'/><circle cx='965' cy='355' r='120' fill='%237aa7ff' fill-opacity='0.12'/><path d='M832 410c46-88 116-88 156 0' fill='none' stroke='%23ffffff' stroke-opacity='0.25' stroke-width='10' stroke-linecap='round'/></g><text x='120' y='125' font-family='Arial' font-size='28' fill='%23e9eef7' opacity='0.9'>Modern Dermatology</text></svg>",
+    "icons": {
+      "shield": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><path fill='%235dd6c1' d='M32 6l20 8v16c0 14-8 22-20 28C20 52 12 44 12 30V14l20-8z'/><path fill='%230b0f14' opacity='0.5' d='M32 14l12 5v11c0 9-5 14-12 18-7-4-12-9-12-18V19l12-5z'/></svg>",
+      "laser": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><path fill='%237aa7ff' d='M10 40l24-24 6 6-24 24H10v-6z'/><path fill='%23e9eef7' opacity='0.8' d='M40 16l8-8 8 8-8 8-8-8z'/><path fill='%235dd6c1' opacity='0.7' d='M46 26l12 12-4 4-12-12 4-4z'/></svg>",
+      "skin": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><path fill='%23e9eef7' opacity='0.8' d='M22 10c8 2 12 7 12 14v8c0 6 4 10 10 10h6v12H38c-10 0-18-8-18-18V10h2z'/><circle cx='26' cy='26' r='6' fill='%235dd6c1' opacity='0.7'/></svg>"
+    },
+    "doctorPhotos": {
+      "doc1": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop stop-color='%235dd6c1' offset='0'/><stop stop-color='%237aa7ff' offset='1'/></linearGradient></defs><rect width='300' height='300' rx='56' fill='%230f1722'/><circle cx='150' cy='130' r='58' fill='url(%23g)' opacity='0.7'/><rect x='70' y='190' width='160' height='72' rx='36' fill='%23ffffff' fill-opacity='0.06' stroke='%23ffffff' stroke-opacity='0.10'/><path d='M112 214h76' stroke='%23e9eef7' stroke-opacity='0.55' stroke-width='10' stroke-linecap='round'/><path d='M118 238h64' stroke='%23a9b4c6' stroke-opacity='0.55' stroke-width='10' stroke-linecap='round'/></svg>",
+      "doc2": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'><defs><linearGradient id='g2' x1='1' y1='0' x2='0' y2='1'><stop stop-color='%237aa7ff' offset='0'/><stop stop-color='%235dd6c1' offset='1'/></linearGradient></defs><rect width='300' height='300' rx='56' fill='%230f1722'/><circle cx='150' cy='122' r='58' fill='url(%23g2)' opacity='0.7'/><rect x='68' y='188' width='164' height='78' rx='39' fill='%23ffffff' fill-opacity='0.06' stroke='%23ffffff' stroke-opacity='0.10'/><path d='M106 218h88' stroke='%23e9eef7' stroke-opacity='0.55' stroke-width='10' stroke-linecap='round'/><path d='M116 244h68' stroke='%23a9b4c6' stroke-opacity='0.55' stroke-width='10' stroke-linecap='round'/></svg>"
+    },
+    "resultPhotos": {
+      "res1": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='600' viewBox='0 0 900 600'><defs><linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'><stop stop-color='%23121b28' offset='0'/><stop stop-color='%230b0f14' offset='1'/></linearGradient></defs><rect width='900' height='600' rx='44' fill='url(%23bg)'/><circle cx='280' cy='310' r='160' fill='%235dd6c1' fill-opacity='0.14'/><circle cx='610' cy='290' r='190' fill='%237aa7ff' fill-opacity='0.12'/><rect x='90' y='420' width='720' height='22' rx='11' fill='%23ffffff' fill-opacity='0.08'/><rect x='90' y='455' width='560' height='22' rx='11' fill='%23ffffff' fill-opacity='0.06'/></svg>",
+      "res2": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='600' viewBox='0 0 900 600'><rect width='900' height='600' rx='44' fill='%230f1722'/><path d='M90 380c120-180 260-230 360-110 90 105 220 70 360-90' fill='none' stroke='%235dd6c1' stroke-opacity='0.35' stroke-width='18' stroke-linecap='round'/><path d='M110 440h680' stroke='%23ffffff' stroke-opacity='0.10' stroke-width='22' stroke-linecap='round'/><path d='M110 480h520' stroke='%23ffffff' stroke-opacity='0.08' stroke-width='22' stroke-linecap='round'/></svg>",
+      "res3": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='600' viewBox='0 0 900 600'><defs><radialGradient id='r' cx='35%25' cy='30%25' r='70%25'><stop stop-color='%237aa7ff' stop-opacity='0.28' offset='0'/><stop stop-color='%237aa7ff' stop-opacity='0' offset='1'/></radialGradient></defs><rect width='900' height='600' rx='44' fill='%230b0f14'/><rect width='900' height='600' rx='44' fill='url(%23r)'/><circle cx='610' cy='320' r='170' fill='%235dd6c1' fill-opacity='0.12'/><rect x='110' y='420' width='660' height='22' rx='11' fill='%23ffffff' fill-opacity='0.08'/><rect x='110' y='455' width='480' height='22' rx='11' fill='%23ffffff' fill-opacity='0.06'/></svg>"
+    }
+  },
+  "contact": {
+    "phone": "+355 69 000 0000",
+    "email": "info@klinika-derm.al",
+    "address": "Rr. \"Myslym Shyri\", Tiranë, Shqipëri",
+    "hours": "Hën–Sht: 09:00–19:00 • Die: Mbyllur",
+    "hoursShort": "09:00–19:00",
+    "locationShort": "Tiranë",
+    "whatsappNumber": "355690000000",
+    "mapsUrl": "https://www.google.com/maps?q=Tirana",
+    "mapEmbedUrl": "https://www.google.com/maps?q=Tirana&output=embed"
+  },
+  "i18n": {
+    "sq": {
+      "clinicName": "Klinika DERM",
+      "clinicTagline": "Dermatologji & Estetikë",
+      "nav": {
+        "services": "Shërbime",
+        "doctors": "Mjekët",
+        "results": "Rezultate",
+        "testimonials": "Vlerësime",
+        "contact": "Kontakt"
+      },
+      "cta": {
+        "call": "Telefono",
+        "book": "Rezervo vizitë",
+        "whatsapp": "WhatsApp",
+        "openMaps": "Hap në Maps",
+        "emailUs": "Na dërgo email"
+      },
+      "hero": {
+        "title": "Lëkurë e shëndetshme, kujdes i saktë — pa drama.",
+        "subtitle": "Diagnozë e qartë, trajtime moderne dhe plan i personalizuar. Dermatologji klinike + estetikë, me fokus tek rezultati dhe siguria.",
+        "quickTitle": "Rezervim i shpejtë",
+        "quickText": "Na shkruaj ose telefono — konfirmim brenda orarit.",
+        "hoursLabel": "Orari",
+        "locationLabel": "Vendndodhja",
+        "highlights": [
+          "Dermatologë të licencuar",
+          "Trajtime të personalizuara",
+          "Teknologji moderne"
+        ]
+      },
+      "trust": {
+        "item1": { "k": "Standard", "v": "Protokolle higjiene & konsultë e strukturuar" },
+        "item2": { "k": "Teknologji", "v": "Laser, dermatoskopi, trajtime të avancuara" },
+        "item3": { "k": "Kujdes", "v": "Plan i qartë + ndjekje pas trajtimit" }
+      },
+      "services": {
+        "title": "Shërbime",
+        "intro": "Nga aknet te problemet e flokëve — trajtim praktik, i matshëm dhe i sigurt.",
+        "items": [
+          {
+            "title": "Dermatologji Klinike",
+            "subtitle": "Akné, dermatit, alergji, ekzema, rosacea",
+            "iconKey": "shield",
+            "bullets": ["Diagnostikim me dermatoskopi", "Plan trajtimi 4–8 javë", "Ndjekje & rregullim protokolli"]
+          },
+          {
+            "title": "Laser & Estetikë",
+            "subtitle": "Heqje qimesh, njolla, vaskulare, rejuvenation",
+            "iconKey": "laser",
+            "bullets": ["Vlerësim i tipit të lëkurës", "Seanca të planifikuara", "Udhëzime të qarta pas trajtimit"]
+          },
+          {
+            "title": "Lëkurë, Flokë & Thonj",
+            "subtitle": "Rënie flokësh, seborrhea, probleme thonjsh",
+            "iconKey": "skin",
+            "bullets": ["Analizë shkaku (kur duhet)", "Trajtim topik/oral", "Plan mirëmbajtje"]
+          }
+        ]
+      },
+      "doctors": {
+        "title": "Mjekët",
+        "intro": "Ekip i fokusuar tek saktësia: diagnozë, plan, rezultat.",
+        "items": [
+          {
+            "name": "Dr. Elira K.",
+            "role": "Dermatologe",
+            "photoKey": "doc1",
+            "bio": "Fokus në dermatologji klinike, akne dhe sëmundje inflamatore të lëkurës.",
+            "badges": ["Akne & Rosacea", "Dermatoskopi", "Protokolle trajtimi"]
+          },
+          {
+            "name": "Dr. Arben M.",
+            "role": "Dermatolog & Estetikë",
+            "photoKey": "doc2",
+            "bio": "Trajtime estetike me qasje konservative dhe të sigurt.",
+            "badges": ["Laser", "Njolla", "Rejuvenation"]
+          }
+        ]
+      },
+      "results": {
+        "title": "Rezultate",
+        "intro": "Shembuj ilustrues të zonave të trajtimit dhe përmirësimit të teksturës.",
+        "disclaimer": "Imazhet janë ilustrative; rezultatet ndryshojnë nga pacienti në pacient.",
+        "items": [
+          { "title": "Trajtim aknesh", "subtitle": "Plan 6-javor + ndjekje", "photoKey": "res1" },
+          { "title": "Njolla & ton i pabarabartë", "subtitle": "Protokoll i kombinuar", "photoKey": "res2" },
+          { "title": "Rejuvenation", "subtitle": "Teksturë më e pastër", "photoKey": "res3" }
+        ]
+      },
+      "testimonials": {
+        "title": "Vlerësime",
+        "intro": "Disa përshtypje tipike nga pacientët tanë.",
+        "items": [
+          { "name": "A.D.", "text": "Më në fund e kuptova çfarë kisha. Trajtimi ishte i qartë dhe funksionoi.", "stars": 5 },
+          { "name": "E.H.", "text": "Shumë profesionistë. Më pëlqeu që s’më premtuan mrekulli — thjesht plan serioz.", "stars": 5 },
+          { "name": "K.B.", "text": "Ambient i pastër, komunikim i mirë dhe ndjekje pas vizitës.", "stars": 5 }
+        ]
+      },
+      "contact": {
+        "title": "Kontakt",
+        "intro": "Na kontakto për konsultë ose për të pyetur për shërbimin që të duhet.",
+        "detailsTitle": "Detaje",
+        "formTitle": "Kërko një rezervim",
+        "mapTitle": "Harta",
+        "phone": "Telefon",
+        "email": "Email",
+        "address": "Adresa",
+        "hours": "Orari"
+      },
+      "form": {
+        "name": "Emër & Mbiemër",
+        "phone": "Telefon",
+        "service": "Shërbimi",
+        "message": "Mesazh",
+        "submit": "Dërgo kërkesën",
+        "note": "Kjo formë është demo. Aktualisht hap një email me detajet e tua."
+      },
+      "footer": {
+        "legal": "© {year} Klinika DERM. Të gjitha të drejtat e rezervuara."
+      }
+    },
+    "en": {
+      "clinicName": "DERM Clinic",
+      "clinicTagline": "Dermatology & Aesthetics",
+      "nav": {
+        "services": "Services",
+        "doctors": "Doctors",
+        "results": "Results",
+        "testimonials": "Testimonials",
+        "contact": "Contact"
+      },
+      "cta": {
+        "call": "Call",
+        "book": "Book appointment",
+        "whatsapp": "WhatsApp",
+        "openMaps": "Open in Maps",
+        "emailUs": "Email us"
+      },
+      "hero": {
+        "title": "Healthy skin, precise care — no drama.",
+        "subtitle": "Clear diagnosis, modern treatments, and a personalized plan. Clinical dermatology + aesthetics focused on results and safety.",
+        "quickTitle": "Fast booking",
+        "quickText": "Message or call — confirmation during working hours.",
+        "hoursLabel": "Hours",
+        "locationLabel": "Location",
+        "highlights": [
+          "Licensed dermatologists",
+          "Personalized treatment plans",
+          "Modern technology"
+        ]
+      },
+      "trust": {
+        "item1": { "k": "Standard", "v": "Hygiene protocols & structured consultation" },
+        "item2": { "k": "Technology", "v": "Laser, dermatoscopy, advanced treatments" },
+        "item3": { "k": "Care", "v": "Clear plan + post-treatment follow-up" }
+      },
+      "services": {
+        "title": "Services",
+        "intro": "From acne to hair issues — practical, measurable, safe care.",
+        "items": [
+          {
+            "title": "Clinical Dermatology",
+            "subtitle": "Acne, dermatitis, allergies, eczema, rosacea",
+            "iconKey": "shield",
+            "bullets": ["Dermatoscopy-based assessment", "4–8 week treatment plan", "Follow-up & protocol adjustments"]
+          },
+          {
+            "title": "Laser & Aesthetics",
+            "subtitle": "Hair removal, pigmentation, vascular, rejuvenation",
+            "iconKey": "laser",
+            "bullets": ["Skin-type evaluation", "Planned sessions", "Clear post-care guidance"]
+          },
+          {
+            "title": "Skin, Hair & Nails",
+            "subtitle": "Hair loss, seborrhea, nail conditions",
+            "iconKey": "skin",
+            "bullets": ["Cause analysis (when needed)", "Topical/oral therapy", "Maintenance plan"]
+          }
+        ]
+      },
+      "doctors": {
+        "title": "Doctors",
+        "intro": "A team focused on accuracy: diagnosis, plan, outcome.",
+        "items": [
+          {
+            "name": "Dr. Elira K.",
+            "role": "Dermatologist",
+            "photoKey": "doc1",
+            "bio": "Focused on clinical dermatology, acne, and inflammatory skin conditions.",
+            "badges": ["Acne & Rosacea", "Dermatoscopy", "Treatment protocols"]
+          },
+          {
+            "name": "Dr. Arben M.",
+            "role": "Dermatology & Aesthetics",
+            "photoKey": "doc2",
+            "bio": "Aesthetic treatments with a conservative, safety-first approach.",
+            "badges": ["Laser", "Pigmentation", "Rejuvenation"]
+          }
+        ]
+      },
+      "results": {
+        "title": "Results",
+        "intro": "Illustrative examples of treatment areas and texture improvement.",
+        "disclaimer": "Images are illustrative; results vary per patient.",
+        "items": [
+          { "title": "Acne care", "subtitle": "6-week plan + follow-up", "photoKey": "res1" },
+          { "title": "Pigmentation & uneven tone", "subtitle": "Combined protocol", "photoKey": "res2" },
+          { "title": "Rejuvenation", "subtitle": "Cleaner texture", "photoKey": "res3" }
+        ]
+      },
+      "testimonials": {
+        "title": "Testimonials",
+        "intro": "Typical feedback from our patients.",
+        "items": [
+          { "name": "A.D.", "text": "Finally understood what was going on. The plan was clear and it worked.", "stars": 5 },
+          { "name": "E.H.", "text": "Very professional. No miracles promised — just a serious plan.", "stars": 5 },
+          { "name": "K.B.", "text": "Clean clinic, good communication, and follow-up after the visit.", "stars": 5 }
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "intro": "Reach out for a consultation or to ask about the service you need.",
+        "detailsTitle": "Details",
+        "formTitle": "Request an appointment",
+        "mapTitle": "Map",
+        "phone": "Phone",
+        "email": "Email",
+        "address": "Address",
+        "hours": "Hours"
+      },
+      "form": {
+        "name": "Full name",
+        "phone": "Phone",
+        "service": "Service",
+        "message": "Message",
+        "submit": "Send request",
+        "note": "This form is a demo. It currently opens an email with your details."
+      },
+      "footer": {
+        "legal": "© {year} DERM Clinic. All rights reserved."
+      }
+    }
+  }
+}

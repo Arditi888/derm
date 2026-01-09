@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dermatology Clinic</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="Clinic home">
+        <img id="brandLogo" class="brand-logo" alt="Clinic logo" />
+        <div class="brand-text">
+          <div id="clinicName" class="brand-name">Clinic</div>
+          <div id="clinicTagline" class="brand-tagline">Dermatology</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#services" data-i18n="nav.services">Services</a>
+        <a class="nav-link" href="#doctors" data-i18n="nav.doctors">Doctors</a>
+        <a class="nav-link" href="#results" data-i18n="nav.results">Results</a>
+        <a class="nav-link" href="#testimonials" data-i18n="nav.testimonials">Testimonials</a>
+        <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <a id="callCta" class="btn btn-ghost" href="#" aria-label="Call clinic">
+          <span data-i18n="cta.call">Call</span>
+        </a>
+        <button id="langToggle" class="btn btn-primary" type="button" aria-label="Toggle language">
+          SQ / EN
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="heroTitle" class="hero-title"></h1>
+          <p id="heroSubtitle" class="hero-subtitle"></p>
+
+          <div class="hero-ctas">
+            <a id="bookCta" class="btn btn-primary" href="#contact">
+              <span data-i18n="cta.book">Book appointment</span>
+            </a>
+            <a id="whatsAppCta" class="btn btn-ghost" href="#" target="_blank" rel="noopener">
+              <span data-i18n="cta.whatsapp">WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="chip">
+              <span class="chip-dot"></span>
+              <span id="highlight1"></span>
+            </div>
+            <div class="chip">
+              <span class="chip-dot"></span>
+              <span id="highlight2"></span>
+            </div>
+            <div class="chip">
+              <span class="chip-dot"></span>
+              <span id="highlight3"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img id="heroImage" class="hero-image" alt="Clinic hero" />
+          <div class="card hero-card">
+            <div class="card-title" data-i18n="hero.quickTitle">Fast booking</div>
+            <div id="heroQuickText" class="card-text"></div>
+            <div class="card-row">
+              <div class="mini">
+                <div class="mini-k" data-i18n="hero.hoursLabel">Hours</div>
+                <div id="hoursShort" class="mini-v"></div>
+              </div>
+              <div class="mini">
+                <div class="mini-k" data-i18n="hero.locationLabel">Location</div>
+                <div id="locationShort" class="mini-v"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="trust">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <div class="trust-k" data-i18n="trust.item1.k">Certified</div>
+          <div id="trust1" class="trust-v"></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-k" data-i18n="trust.item2.k">Technology</div>
+          <div id="trust2" class="trust-v"></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-k" data-i18n="trust.item3.k">Care</div>
+          <div id="trust3" class="trust-v"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="services.title">Services</h2>
+          <p id="servicesIntro" class="section-subtitle"></p>
+        </div>
+        <div id="servicesGrid" class="grid cards"></div>
+      </div>
+    </section>
+
+    <!-- Doctors -->
+    <section id="doctors" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="doctors.title">Doctors</h2>
+          <p id="doctorsIntro" class="section-subtitle"></p>
+        </div>
+        <div id="doctorsGrid" class="grid cards"></div>
+      </div>
+    </section>
+
+    <!-- Results / Gallery -->
+    <section id="results" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="results.title">Results</h2>
+          <p id="resultsIntro" class="section-subtitle"></p>
+        </div>
+        <div id="resultsGrid" class="grid gallery"></div>
+        <p class="fineprint" data-i18n="results.disclaimer">
+          Images are illustrative; results vary per patient.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" data-i18n="testimonials.title">Testimonials</h2>
+          <p id="testimonialsIntro" class="section-subtitle"></p>
+        </div>
+        <div id="testimonialsGrid" class="grid cards"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-head">
+            <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+            <p id="contactIntro" class="section-subtitle"></p>
+          </div>
+
+          <div class="contact-cards">
+            <div class="card">
+              <div class="card-title" data-i18n="contact.detailsTitle">Details</div>
+              <div class="list">
+                <div class="list-row">
+                  <div class="list-k" data-i18n="contact.phone">Phone</div>
+                  <a id="phoneLink" class="list-v" href="#"></a>
+                </div>
+                <div class="list-row">
+                  <div class="list-k" data-i18n="contact.email">Email</div>
+                  <a id="emailLink" class="list-v" href="#"></a>
+                </div>
+                <div class="list-row">
+                  <div class="list-k" data-i18n="contact.address">Address</div>
+                  <div id="addressText" class="list-v"></div>
+                </div>
+                <div class="list-row">
+                  <div class="list-k" data-i18n="contact.hours">Hours</div>
+                  <div id="hoursText" class="list-v"></div>
+                </div>
+              </div>
+
+              <div class="contact-actions">
+                <a id="mapsCta" class="btn btn-ghost" href="#" target="_blank" rel="noopener">
+                  <span data-i18n="cta.openMaps">Open in Maps</span>
+                </a>
+                <a id="emailCta" class="btn btn-primary" href="#">
+                  <span data-i18n="cta.emailUs">Email us</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title" data-i18n="contact.formTitle">Request an appointment</div>
+              <form id="appointmentForm" class="form">
+                <label class="field">
+                  <span class="label" data-i18n="form.name">Full name</span>
+                  <input name="name" type="text" required autocomplete="name" />
+                </label>
+                <label class="field">
+                  <span class="label" data-i18n="form.phone">Phone</span>
+                  <input name="phone" type="tel" required autocomplete="tel" />
+                </label>
+                <label class="field">
+                  <span class="label" data-i18n="form.service">Service</span>
+                  <select id="serviceSelect" name="service" required></select>
+                </label>
+                <label class="field">
+                  <span class="label" data-i18n="form.message">Message</span>
+                  <textarea name="message" rows="4" required></textarea>
+                </label>
+                <button class="btn btn-primary" type="submit">
+                  <span data-i18n="form.submit">Send request</span>
+                </button>
+                <p id="formNote" class="fineprint"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <aside class="map-wrap">
+          <div class="card map-card">
+            <div class="card-title" data-i18n="contact.mapTitle">Map</div>
+            <iframe
+              id="mapFrame"
+              title="Clinic map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map"
+              src=""
+            ></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img id="footerLogo" class="footer-logo" alt="Clinic logo" />
+        <div>
+          <div id="footerName" class="footer-name"></div>
+          <div id="footerLegal" class="footer-legal"></div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="#services" data-i18n="nav.services">Services</a>
+        <a class="footer-link" href="#doctors" data-i18n="nav.doctors">Doctors</a>
+        <a class="footer-link" href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
